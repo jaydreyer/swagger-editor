@@ -7,6 +7,7 @@ import EditorPlugin from "./plugins/editor"
 import LocalStoragePlugin from "./plugins/local-storage"
 import TopBarPlugin from "./plugins/topbar"
 import ValidationApiPlugin from "./plugins/validation/apis"
+import InfoPlugin from "./plugins/info"
 
 // eslint-disable-next-line no-undef
 const { GIT_DIRTY, GIT_COMMIT, PACKAGE_VERSION } = buildInfo
@@ -24,7 +25,8 @@ const defaults = {
     EditorPlugin,
     TopBarPlugin,
     ValidationApiPlugin,
-    LocalStoragePlugin
+    LocalStoragePlugin,
+    InfoPlugin
   ],
   components: {
     EditorLayout,
